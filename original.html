@@ -5,239 +5,284 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechShed</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 <body>
     <div class="bg-gray-200">
-        <div>
-            <nav class="flex justify-between p-7">
-                <div class="font-medium text-5xl">
+
+        <!-- NAVBAR -->
+        <nav class="flex justify-between items-center px-4 py-4 md:px-7 md:py-7">
+            <div class="font-medium text-3xl md:text-5xl">
                 <h1 class="cursor-pointer"><a href="original.html">TechShed</a></h1>
-                </div>
-                <div class="flex gap-7 item-centre">
-                    <i class="fa-solid fa-magnifying-glass mt-1 text-2xl hover:cursor-pointer"></i>
-                     <div class="flex gap-2">
-                        <i class="fa-solid fa-circle-user mt-1 text-2xl hover:cursor-pointer"></i>
-                        <h1 class="mt-1 text-2xl hover:cursor-pointer">Log In</h1>
-                    </div>
-                    <div>
-                        <i class="fa-regular fa-heart mt-1 text-2xl hover:cursor-pointer"></i>
-                    </div>
-                    <div class="flex gap-2">
-                        <i class="fa-solid fa-cart-shopping mt-1 text-2xl hover:cursor-pointer"></i>
-                        <h1 class="mt-1 text-l bg-black-700 hover:cursor-pointer">1</h1>
-                    </div>
-                </div>
-            </nav>
-            <div class="flex gap-10 text-l font-extralight bg-gray-300 p-4">
-                <h1 class="ml-[10px] hover:text-purple-600 cursor-pointer"><a href="shopall.html">Shop all</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="computers.html">Computers</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="tablets.html">Tablets</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="drones&cameras.html">Drones & Cameras</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="audio.html">Audio</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="mobiles.html">Mobile</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="tv&homecinemas.html">T.V & Home Cinema</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="wearabletach.html">Wearable Tech</a></h1>
-                <h1 class="hover:text-purple-600 cursor-pointer"><a href="sale.html">Sale</a></h1>
             </div>
+            <div class="flex gap-4 md:gap-7 items-center">
+                <i class="fa-solid fa-magnifying-glass text-xl md:text-2xl hover:cursor-pointer"></i>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-circle-user text-xl md:text-2xl hover:cursor-pointer"></i>
+                    <h1 class="text-lg md:text-2xl hover:cursor-pointer hidden sm:block">Log In</h1>
+                </div>
+                <div>
+                    <i class="fa-regular fa-heart text-xl md:text-2xl hover:cursor-pointer"></i>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <i class="fa-solid fa-cart-shopping text-xl md:text-2xl hover:cursor-pointer"></i>
+                    <h1 class="text-base md:text-lg hover:cursor-pointer">1</h1>
+                </div>
+            </div>
+        </nav>
+
+        <!-- CATEGORY NAV -->
+        <div class="flex flex-wrap gap-3 md:gap-10 text-sm md:text-base font-extralight bg-gray-300 px-4 py-3 md:p-4 overflow-x-auto">
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap ml-0 md:ml-[10px]"><a href="shopall.html">Shop all</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="computers.html">Computers</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="tablets.html">Tablets</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="drones&cameras.html">Drones & Cameras</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="audio.html">Audio</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="mobiles.html">Mobile</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="tv&homecinemas.html">T.V & Home Cinema</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="wearabletach.html">Wearable Tech</a></h1>
+            <h1 class="hover:text-purple-600 cursor-pointer whitespace-nowrap"><a href="sale.html">Sale</a></h1>
         </div>
-        <div class = "relative">
-            <i class="fa-regular fa-comment-dots fixed bottom-7 right-5 text-3xl text-white rounded-full bg-red-500 px-3 py-2 cursor-pointer"></i>
-            <div>
-                <img src="https://static.wixstatic.com/media/c837a6_f58829a26e594ca3aa72383e19cf39b9~mv2.png/v1/fill/w_1225,h_706,al_r,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f58829a26e594ca3aa72383e19cf39b9~mv2.png" class = "w-[1800px] h-[865px]">  
-                <div class="absolute top-[100px] left-60 flex items-center">
-                    <h1 class="px-3 bg-red-600 text-centre text-white font-extralight text-2xl">Best Prices</h1>
-                </div>
-                <div class="absolute top-40 left-60  flex items-center">
-                    <h1 class="text-7xl font-semibold leading-[1.5]">Incredible Prices <br> on All Your <br> Favorite Items</h1>
-                </div>
-                <div class="absolute top-[500px] left-[250px] flex items-center">
-                    <h1 class="font-extralight text-2xl">Get more for less on selected brands</h1>
-                </div>
-                <div class="absolute top-[600px] left-[250px] flex items-center">
-                    <button class="text-white text-xl font-extralight bg-violet-600 px-[80px] py-[15px] rounded-3xl">Shop Now</button>
+
+        <!-- HERO BANNER -->
+        <div class="relative w-full overflow-hidden">
+            <img src="https://static.wixstatic.com/media/c837a6_f58829a26e594ca3aa72383e19cf39b9~mv2.png/v1/fill/w_1225,h_706,al_r,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_f58829a26e594ca3aa72383e19cf39b9~mv2.png"
+                class="w-full h-[300px] sm:h-[450px] md:h-[600px] lg:h-[865px] object-cover">
+            <div class="absolute inset-0 flex flex-col justify-center px-8 sm:px-16 md:px-24 lg:px-60">
+                <h1 class="inline-block px-3 bg-red-600 text-white font-extralight text-sm sm:text-lg md:text-2xl mb-2 md:mb-4 w-fit">Best Prices</h1>
+                <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold leading-snug mb-4 md:mb-8">Incredible Prices <br> on All Your <br> Favorite Items</h1>
+                <h1 class="font-extralight text-sm sm:text-lg md:text-2xl mb-4 md:mb-8">Get more for less on selected brands</h1>
+                <div>
+                    <button class="text-white text-sm sm:text-base md:text-xl font-extralight bg-violet-600 px-8 sm:px-12 md:px-[80px] py-2 sm:py-3 md:py-[15px] rounded-3xl">Shop Now</button>
                 </div>
             </div>
         </div>
-        <div class = "relative">
-            <div class="m-[50px]">
-                <div class="flex gap-10">
-                    <img src="Images/homepage/c22c23_e140bfa8cd6f4cb2ac5ee6e204f64073~mv2.avif" class = "w-[830px] h-[600px]"> 
-                    <img src="Images/homepage/c837a6_d84a631864a442a496670bc2d787c6a0~mv2.avif" class = "w-[830px] h-[600px]"> 
-                </div>
-                <div class="bg-zinc-300 flex">
-                    <div>
-                        <div class="absolute top-[100px] left-[140px] flex items-center">
-                        <h1 class="px-3 text-centre text-white font-extralight text-2xl">Holiday Deals</h1>
-                        </div>
-                        <div class="absolute top-40 left-[150px]  flex items-center">
-                            <h1 class="text-7xl text-white font-medium leading-[1]">Up to <br>30% off</h1>
-                        </div>
-                        <div class="absolute top-[330px] left-[150px] flex items-center">
-                            <h1 class="font-extralight text-white text-2xl tracking-wider">Selected Smartphone Brands</h1>
-                        </div>
-                        <div class="absolute top-[400px] left-[150px] flex items-center">
-                            <button class="text-xl font-extralight bg-neutral-100 px-[60px] py-[10px] rounded-3xl hover:bg-transparent hover:border-2 hover:border-white hover:text-white">Shop</button>
+
+        <!-- TWO IMAGE BANNERS -->
+        <div class="m-4 sm:m-6 md:m-[50px]">
+            <div class="flex flex-col sm:flex-row gap-4 md:gap-10">
+                <!-- Banner 1 -->
+                <div class="relative w-full sm:w-1/2 overflow-hidden">
+                    <img src="Images/homepage/c22c23_e140bfa8cd6f4cb2ac5ee6e204f64073~mv2.avif"
+                        class="w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover">
+                    <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
+                        <h1 class="px-3 text-white font-extralight text-sm sm:text-base md:text-2xl mb-2 w-fit">Holiday Deals</h1>
+                        <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white font-medium leading-tight mb-2 md:mb-4">Up to <br>30% off</h1>
+                        <h1 class="font-extralight text-white text-sm sm:text-base md:text-2xl tracking-wider mb-3 md:mb-6">Selected Smartphone Brands</h1>
+                        <div>
+                            <button class="text-sm md:text-xl font-extralight bg-neutral-100 px-6 sm:px-8 md:px-[60px] py-2 md:py-[10px] rounded-3xl hover:bg-transparent hover:border-2 hover:border-white hover:text-white">Shop</button>
                         </div>
                     </div>
-                    <div>
-                        <div class="absolute top-[100px] left-[990px] flex items-center">
-                            <h1 class="px-3 text-centre text-white font-extralight text-2xl">Just In</h1>
-                        </div>
-                        <div class="absolute top-40 left-[1000px]  flex items-center">
-                            <h1 class="text-7xl text-white font-medium leading-[1]">Take Your <br> Sound <br> Anywhere</h1>
-                        </div>
-                        <div class="absolute top-[390px] left-[1000px] flex items-center">
-                            <h1 class="font-extralight text-white text-2xl tracking-wider">Top Headphone Brands</h1>
-                        </div>
-                        <div class="absolute top-[450px] left-[1000px] flex items-center">
-                            <button class="text-xl font-extralight bg-neutral-100 px-[60px] py-[10px] rounded-3xl hover:bg-transparent hover:border-2 hover:border-white hover:text-white">Shop</button>
+                </div>
+                <!-- Banner 2 -->
+                <div class="relative w-full sm:w-1/2 overflow-hidden">
+                    <img src="Images/homepage/c837a6_d84a631864a442a496670bc2d787c6a0~mv2.avif"
+                        class="w-full h-[250px] sm:h-[350px] md:h-[500px] lg:h-[600px] object-cover">
+                    <div class="absolute inset-0 flex flex-col justify-center px-6 md:px-10">
+                        <h1 class="px-3 text-white font-extralight text-sm sm:text-base md:text-2xl mb-2 w-fit">Just In</h1>
+                        <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white font-medium leading-tight mb-2 md:mb-4">Take Your <br> Sound <br> Anywhere</h1>
+                        <h1 class="font-extralight text-white text-sm sm:text-base md:text-2xl tracking-wider mb-3 md:mb-6">Top Headphone Brands</h1>
+                        <div>
+                            <button class="text-sm md:text-xl font-extralight bg-neutral-100 px-6 sm:px-8 md:px-[60px] py-2 md:py-[10px] rounded-3xl hover:bg-transparent hover:border-2 hover:border-white hover:text-white">Shop</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w-[1700px] h-[200px] bg-white m-[50px] flex">
-            <h1 class="text-2xl font-medium ml-[160px] pt-[70px]">Curb-side <br> pickup</h1>
-            <h1 class="text-2xl font-medium ml-[290px] pt-[70px]">Free shipping on <br> orders over $50</h1>
-            <h1 class="text-2xl font-medium ml-[320px] pt-[70px]">Low prices <br> guaranteed</h1>
-            <h1 class="text-2xl font-medium ml-[330px] pt-[70px]">Available to <br> you 24/7 </h1>
+
+        <!-- SERVICE HIGHLIGHTS -->
+        <div class="bg-white mx-4 sm:mx-6 md:mx-[50px] my-6 md:my-0 md:mb-6 px-6 py-8 md:py-0 md:h-[200px] grid grid-cols-2 sm:grid-cols-4 gap-4 items-center justify-items-center">
+            <h1 class="text-base md:text-2xl font-medium text-center">Curb-side <br> pickup</h1>
+            <h1 class="text-base md:text-2xl font-medium text-center">Free shipping on <br> orders over $50</h1>
+            <h1 class="text-base md:text-2xl font-medium text-center">Low prices <br> guaranteed</h1>
+            <h1 class="text-base md:text-2xl font-medium text-center">Available to <br> you 24/7</h1>
         </div>
-        <div class="relative w-[1700px] h-[800px] bg-white m-[50px] flex">
-            <h1 class="text-4xl font-medium ml-[780px] pt-[70px]">Best Sellers</h1>
-            <div class="absolute left-[720px] top-[700px] bottom-[30px] mt-[00px] mr-[0px] ">
-                <button class="bg-violet-600 px-[120px] py-[15px] text-white text-2xl font-thin rounded-[4vw]">View All</button>
+
+        <!-- BEST SELLERS -->
+        <div class="bg-white mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[50px] px-6 py-10 md:py-[70px] flex flex-col items-center min-h-[300px] md:h-[800px] justify-between">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium">Best Sellers</h1>
+            <div class="mt-8 md:mt-0">
+                <button class="bg-violet-600 px-12 sm:px-16 md:px-[120px] py-3 md:py-[15px] text-white text-lg sm:text-xl md:text-2xl font-thin rounded-[4vw]">View All</button>
             </div>
         </div>
-        <div class="relative w-[1700px] h-[1000px] bg-white ml-[50px] mt-[50px] mr-[50px] flex">
-            <h1 class="text-4xl font-medium ml-[740px] pt-[70px]">Shop by Category</h1>
-            <div class="absolute">
-                <div class="absolute w-[300px] h-[300px] flex">
-                    <img class="w-[250px] h-[250px] ml-[120px] mt-[250px] cursor-pointer" src="Images/homepage/Computer.avif">
-                    <img class="w-[200px] h-[200px] ml-[120px] mt-[270px] cursor-pointer" src="Images/homepage/Mobile.avif">
-                    <img class="w-[220px] h-[220px] ml-[120px] mt-[260px] cursor-pointer" src="Images/homepage/Drones.avif">
-                    <img class="w-[220px] h-[220px] ml-[380px] mt-[260px] cursor-pointer" src="Images/homepage/Tablets.avif">
+
+        <!-- SHOP BY CATEGORY -->
+        <div class="bg-white mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[50px] px-6 py-10">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium text-center mb-8 md:mb-12">Shop by Category</h1>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-10">
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 object-contain" src="Images/homepage/Computer.avif">
+                    <h1 class="text-sm md:text-xl font-medium">Computers</h1>
                 </div>
-                <h1 class="absolute ml-[190px] mt-[480px] text-xl font-medium cursor-pointer">Computers</h1>
-                <h1 class="absolute ml-[560px] mt-[480px] text-xl font-medium cursor-pointer">Mobile</h1>
-                <h1 class="absolute ml-[830px] mt-[480px] text-xl font-medium cursor-pointer">Drones&Cameras</h1>
-                <h1 class="absolute ml-[1480px] mt-[480px] text-xl font-medium cursor-pointer">Tablets</h1>
-                <div class="absolute w-[300px] h-[300px] flex">
-                    <img class="w-[250px] h-[250px] ml-[460px] mt-[600px] cursor-pointer" src="Images/homepage/TV.avif">
-                    <img class="w-[200px] h-[200px] ml-[90px] mt-[600px] cursor-pointer" src="Images/homepage/Watch.avif">
-                    <img class="w-[220px] h-[220px] ml-[90px] mt-[600px] cursor-pointer" src="Images/homepage/Speaker.avif">
-                    <img class="w-[220px] h-[220px] ml-[90px] mt-[600px] cursor-pointer" src="Images/homepage/Earphones.avif">
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain" src="Images/homepage/Mobile.avif">
+                    <h1 class="text-sm md:text-xl font-medium">Mobile</h1>
                 </div>
-                <h1 class="absolute ml-[510px] mt-[850px] text-xl font-medium cursor-pointer">TV&HomeCinema</h1>
-                <h1 class="absolute ml-[860px] mt-[850px] text-xl font-medium cursor-pointer">WearableTech</h1>
-                <h1 class="absolute ml-[1160px] mt-[850px] text-xl font-medium cursor-pointer">Speakers</h1>
-                <h1 class="absolute ml-[1470px] mt-[850px] text-xl font-medium cursor-pointer">Earphones</h1>
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 object-contain" src="Images/homepage/Drones.avif">
+                    <h1 class="text-sm md:text-xl font-medium">Drones & Cameras</h1>
+                </div>
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 object-contain" src="Images/homepage/Tablets.avif">
+                    <h1 class="text-sm md:text-xl font-medium">Tablets</h1>
+                </div>
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 object-contain" src="Images/homepage/TV.avif">
+                    <h1 class="text-sm md:text-xl font-medium">TV & Home Cinema</h1>
+                </div>
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 object-contain" src="Images/homepage/Watch.avif">
+                    <h1 class="text-sm md:text-xl font-medium">Wearable Tech</h1>
+                </div>
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 object-contain" src="Images/homepage/Speaker.avif">
+                    <h1 class="text-sm md:text-xl font-medium">Speakers</h1>
+                </div>
+                <div class="flex flex-col items-center gap-2 cursor-pointer hover:opacity-80">
+                    <img class="w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 object-contain" src="Images/homepage/Earphones.avif">
+                    <h1 class="text-sm md:text-xl font-medium">Earphones</h1>
+                </div>
             </div>
         </div>
-        <div class="relative w-[1700px] h-[600px] bg-white ml-[50px] mt-[10px] flex">
-            <img class="absolute w-[1000px] h-[600px]" src="Images/homepage/Best Price.avif"/>
-            <h1 class="absolute ml-[1240px] mt-[150px] text-4xl font-medium">Save up to</h1>
-            <h1 class="absolute ml-[1240px] mt-[220px] text-8xl font-semibold">$150</h1>
-            <h1 class="absolute ml-[1240px] mt-[350px] text-4xl font-medium">on selected laptop</h1>
-            <h1 class="absolute ml-[1240px] mt-[390px] text-4xl font-medium">& tablets brands</h1>
-            <h1 class="absolute ml-[1240px] mt-[440px] text-xl font-extralight">Terms and conditions apply</h1>
-            <button class="absolute ml-[1240px] mt-[500px] bg-violet-600 px-[80px] py-[15px] text-white text-2xl font-thin rounded-[5vw]">Shop</button>
-        </div>
-        <div class="relative w-[1700px] h-[800px] bg-white ml-[50px] mt-[50px] flex">
-            <h1 class="text-4xl font-medium ml-[800px] pt-[70px]">On Sale</h1>
-            <div class="absolute left-[720px] top-[700px] bottom-[30px] mt-[00px] mr-[0px] ">
-                <button class="bg-violet-600 px-[120px] py-[15px] text-white text-2xl font-thin rounded-[4vw]">View All</button>
+
+        <!-- SAVE UP TO $150 BANNER -->
+        <div class="bg-white mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[10px] flex flex-col-reverse md:flex-row overflow-hidden">
+            <img class="w-full md:w-1/2 lg:w-[1000px] h-[250px] sm:h-[350px] md:h-[600px] object-cover" src="Images/homepage/Best Price.avif"/>
+            <div class="flex flex-col justify-center px-6 py-8 md:px-10 md:py-0 gap-3 md:gap-4">
+                <h1 class="text-xl sm:text-2xl md:text-4xl font-medium">Save up to</h1>
+                <h1 class="text-5xl sm:text-6xl md:text-8xl font-semibold">$150</h1>
+                <h1 class="text-lg sm:text-2xl md:text-4xl font-medium">on selected laptop</h1>
+                <h1 class="text-lg sm:text-2xl md:text-4xl font-medium">& tablets brands</h1>
+                <h1 class="text-sm md:text-xl font-extralight">Terms and conditions apply</h1>
+                <div>
+                    <button class="bg-violet-600 px-8 sm:px-12 md:px-[80px] py-2 sm:py-3 md:py-[15px] text-white text-lg sm:text-xl md:text-2xl font-thin rounded-[5vw]">Shop</button>
+                </div>
             </div>
         </div>
-        <div class="relative w-[1700px] h-[650px] bg-white ml-[50px] mt-[10px] flex">
-            <img class="absolute w-[1000px] h-[650px] ml-[700px]" src="Images/homepage/Professional Camera Drones.avif"/>
-            <h1 class="absolute ml-[50px] mt-[120px] px-[15px] bg-red-600 text-white text-xl font-extralight">Today's Special</h1>
-            <h1 class="absolute ml-[50px] mt-[180px] text-4xl font-medium">Best Ariel View in Town</h1>
-            <h1 class="absolute ml-[50px] mt-[250px] text-8xl font-semibold"><span class="text-violet-600">30% </span> OFF</h1>
-            <h1 class="absolute ml-[50px] mt-[370px] text-4xl font-medium">on professional camera drones</h1>
-            <h1 class="absolute ml-[50px] mt-[440px] text-xl font-extralight">Limited quantities.</h1>                
-            <h1 class="absolute ml-[50px] mt-[465px] text-xl font-extralight">See product detail pages for availability.</h1>
-            <button class="absolute ml-[50px] mt-[540px] bg-violet-600 px-[80px] py-[15px] text-white text-2xl font-thin rounded-[5vw]">Shop</button>
+
+        <!-- ON SALE -->
+        <div class="bg-white mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[50px] px-6 py-10 md:py-[70px] flex flex-col items-center min-h-[300px] md:h-[800px] justify-between">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium">On Sale</h1>
+            <div class="mt-8 md:mt-0">
+                <button class="bg-violet-600 px-12 sm:px-16 md:px-[120px] py-3 md:py-[15px] text-white text-lg sm:text-xl md:text-2xl font-thin rounded-[4vw]">View All</button>
+            </div>
         </div>
-        <div class="relative w-[1700px] h-[400px] bg-white ml-[50px] mt-[50px] flex">
-            <h1 class="text-4xl font-medium ml-[800px] pt-[70px]">Brands</h1>
-            <img class="absolute w-[1500px] ml-[100px] mt-[190px] " src="Images/homepage/Brands.avif"/>
+
+        <!-- 30% OFF DRONES BANNER -->
+        <div class="bg-white mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[10px] flex flex-col md:flex-row overflow-hidden">
+            <div class="flex flex-col justify-center px-6 py-8 md:px-10 md:py-0 gap-3 md:gap-4">
+                <h1 class="inline-block px-[15px] bg-red-600 text-white text-sm md:text-xl font-extralight w-fit">Today's Special</h1>
+                <h1 class="text-xl sm:text-2xl md:text-4xl font-medium">Best Ariel View in Town</h1>
+                <h1 class="text-4xl sm:text-6xl md:text-8xl font-semibold"><span class="text-violet-600">30% </span> OFF</h1>
+                <h1 class="text-lg sm:text-2xl md:text-4xl font-medium">on professional camera drones</h1>
+                <h1 class="text-sm md:text-xl font-extralight">Limited quantities.</h1>
+                <h1 class="text-sm md:text-xl font-extralight">See product detail pages for availability.</h1>
+                <div>
+                    <button class="bg-violet-600 px-8 sm:px-12 md:px-[80px] py-2 sm:py-3 md:py-[15px] text-white text-lg sm:text-xl md:text-2xl font-thin rounded-[5vw]">Shop</button>
+                </div>
+            </div>
+            <img class="w-full md:w-1/2 lg:w-[1000px] h-[250px] sm:h-[350px] md:h-[650px] object-cover" src="Images/homepage/Professional Camera Drones.avif"/>
         </div>
-        <div class="relative w-[1700px] h-[400px] bg-violet-600 ml-[50px] mt-[50px] flex">
-            <h1 class="absolute text-4xl font-medium ml-[770px] pt-[50px] text-white"> Newsletter</h1>
-            <h1 class="absolute text-white font-thin text-xl ml-[600px] mt-[120px]">Sign up to receive updates on new arrivals and special offers</h1>
-            <form class="relative ml-[350px] mt-[190px]">
-                    <div>
-                        <label for="email" class="block text-xl font-thin text-gray-700 mb-2 text-white">Email</label>
-                        <input type="email" id="email" name="email" class="absolute px-[250px] py-[12px] border border-white rounded-[6vw] bg-violet-600 text-gray-900 text-base"/>
-                    </div>
-                    <div class="flex items-center">
-                        <input id="consent" name="consent" type="checkbox" class="absolute h-[15px] w-[15px] text-purple-600 bg-violet-600 rounded mt-[200px]" required/>
-                        <label class="absolute ml-[20px] text-xl font-thin text-white cursor-pointer mt-[200px]">Yes, subscribe me to your newsletter.</label>
-                    </div>
-                    <button type="submit" class="bg-gray-950 px-[100px] text-white font-semibold py-[12px] rounded-[4vw] text-lg ml-[700px]">Subscribe</button>
+
+        <!-- BRANDS -->
+        <div class="bg-white mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[50px] px-6 py-10">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium text-center mb-8">Brands</h1>
+            <img class="w-full object-contain" src="Images/homepage/Brands.avif"/>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="bg-violet-600 mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[50px] px-6 py-10 flex flex-col items-center gap-4">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-medium text-white">Newsletter</h1>
+            <h1 class="text-white font-thin text-sm sm:text-base md:text-xl text-center">Sign up to receive updates on new arrivals and special offers</h1>
+            <form class="w-full max-w-xl flex flex-col gap-4 mt-2">
+                <div>
+                    <label for="email" class="block text-base md:text-xl font-thin text-white mb-2">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full px-4 py-3 border border-white rounded-[6vw] bg-violet-600 text-white placeholder-white/70 text-base outline-none"/>
+                </div>
+                <div class="flex items-center gap-3">
+                    <input id="consent" name="consent" type="checkbox"
+                        class="h-4 w-4 text-purple-600 bg-violet-600 rounded" required/>
+                    <label for="consent" class="text-sm md:text-xl font-thin text-white cursor-pointer">Yes, subscribe me to your newsletter.</label>
+                </div>
+                <button type="submit"
+                    class="bg-gray-950 px-10 text-white font-semibold py-3 rounded-[4vw] text-base md:text-lg w-full sm:w-fit self-center">Subscribe</button>
             </form>
         </div>
-        <div class="relative w-[1700px] h-[500px] bg-gray-950 ml-[50px] mt-[50px] flex">
-            <img class="absolute w-[1000px] h-[500px] ml-[700px]" src="Images/homepage/Help Centre.avif"/>
-            <h1 class="absolute ml-[50px] mt-[130px] text-4xl font-medium text-white">Need Help? Check</h1>
-            <h1 class="absolute ml-[50px] mt-[170px] text-4xl font-medium text-white">Out Our Help Center</h1>
-            <h1 class="absolute ml-[50px] mt-[240px] text-xl font-extralight text-white">I'm a paragraph. Click here to add your own text</h1>                
-            <h1 class="absolute ml-[50px] mt-[270px] text-xl font-extralight text-white">and edit me. Let your users get to know you.</h1>
-            <button class="absolute ml-[50px] mt-[320px] bg-white px-[40px] py-[10px] text-violet-600 text-xl font-thin rounded-[5vw]">Go to Help Center</button>
+
+        <!-- HELP CENTER -->
+        <div class="bg-gray-950 mx-4 sm:mx-6 md:mx-[50px] mt-6 md:mt-[50px] flex flex-col md:flex-row overflow-hidden">
+            <div class="flex flex-col justify-center px-6 py-10 md:px-10 gap-3 md:gap-4">
+                <h1 class="text-xl sm:text-2xl md:text-4xl font-medium text-white">Need Help? Check</h1>
+                <h1 class="text-xl sm:text-2xl md:text-4xl font-medium text-white">Out Our Help Center</h1>
+                <h1 class="text-sm md:text-xl font-extralight text-white">I'm a paragraph. Click here to add your own text</h1>
+                <h1 class="text-sm md:text-xl font-extralight text-white">and edit me. Let your users get to know you.</h1>
+                <div>
+                    <button class="bg-white px-6 sm:px-8 md:px-[40px] py-2 md:py-[10px] text-violet-600 text-sm md:text-xl font-thin rounded-[5vw]">Go to Help Center</button>
+                </div>
+            </div>
+            <img class="w-full md:w-1/2 lg:w-[1000px] h-[200px] sm:h-[300px] md:h-[500px] object-cover" src="Images/homepage/Help Centre.avif"/>
         </div>
-        <div>
-            <div class="relative">
-                <h1 class="absolute ml-[130px] mt-[60px] text-xl font-medium">Store Location</h1>
-                <h1 class="absolute ml-[130px] mt-[130px] text-xl font-extralight">500 Terry Francine Street</h1>
-                <h1 class="absolute ml-[130px] mt-[170px] text-xl font-extralight">San Francisco, CA 94158</h1>
-                <h1 class="absolute ml-[130px] mt-[210px] text-xl font-extralight">info@mysite.com</h1>
-                <h1 class="absolute ml-[130px] mt-[250px] text-xl font-extralight">123-456-7890</h1>
+
+        <!-- FOOTER LINKS -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 px-6 sm:px-10 md:px-[130px] py-12 md:py-16 bg-gray-200">
+            <div class="flex flex-col gap-3">
+                <h1 class="text-base md:text-xl font-medium">Store Location</h1>
+                <h1 class="text-sm md:text-xl font-extralight">500 Terry Francine Street</h1>
+                <h1 class="text-sm md:text-xl font-extralight">San Francisco, CA 94158</h1>
+                <h1 class="text-sm md:text-xl font-extralight">info@mysite.com</h1>
+                <h1 class="text-sm md:text-xl font-extralight">123-456-7890</h1>
             </div>
-            <div class="relative">
-                <h1 class="absolute ml-[600px] mt-[60px] text-xl font-medium">Shop</h1>
-                <h1 class="absolute ml-[600px] mt-[130px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="shopall.html">Shop All</a></h1>
-                <h1 class="absolute ml-[600px] mt-[170px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="computers.html">Computers</a></h1>
-                <h1 class="absolute ml-[600px] mt-[210px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="tablets.html">Tablets</a></h1>
-                <h1 class="absolute ml-[600px] mt-[250px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="drones&cameras.html">Drones & Cameras</a></h1>
-                <h1 class="absolute ml-[600px] mt-[290px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="audio.html">Audio</a></h1>
-                <h1 class="absolute ml-[600px] mt-[330px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="mobiles.html">Mobile</a></h1>
-                <h1 class="absolute ml-[600px] mt-[370px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="tv&homecinemas.html">T.V & Home Cinema</a> </h1>
-                <h1 class="absolute ml-[600px] mt-[410px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="wearabletach.html">Wearable Tech</a></h1>
-                <h1 class="absolute ml-[600px] mt-[450px] text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="sale.html">Sale</a></h1>
+            <div class="flex flex-col gap-3">
+                <h1 class="text-base md:text-xl font-medium">Shop</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="shopall.html">Shop All</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="computers.html">Computers</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="tablets.html">Tablets</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="drones&cameras.html">Drones & Cameras</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="audio.html">Audio</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="mobiles.html">Mobile</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="tv&homecinemas.html">T.V & Home Cinema</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="wearabletach.html">Wearable Tech</a></h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600"><a href="sale.html">Sale</a></h1>
             </div>
-            <div class="relative">
-                <h1 class="absolute ml-[1050px] mt-[60px] text-xl font-medium hover:text-violet-600">Customer Support</h1>
-                <h1 class="absolute ml-[1050px] mt-[130px] text-xl font-extralight cursor-pointer hover:text-violet-600">Contact Us</h1>
-                <h1 class="absolute ml-[1050px] mt-[170px] text-xl font-extralight cursor-pointer hover:text-violet-600">Help Centre</h1>
-                <h1 class="absolute ml-[1050px] mt-[210px] text-xl font-extralight cursor-pointer hover:text-violet-600">About Us</h1>
-                <h1 class="absolute ml-[1050px] mt-[250px] text-xl font-extralight cursor-pointer hover:text-violet-600">Careers</h1>
+            <div class="flex flex-col gap-3">
+                <h1 class="text-base md:text-xl font-medium">Customer Support</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">Contact Us</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">Help Centre</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">About Us</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">Careers</h1>
             </div>
-            <div class="relative">
-                <h1 class="absolute ml-[1450px] mt-[60px] text-xl font-medium">Policy</h1>
-                <h1 class="absolute ml-[1450px] mt-[130px] text-xl font-extralight cursor-pointer hover:text-violet-600">Shipping & Returns</h1>
-                <h1 class="absolute ml-[1450px] mt-[170px] text-xl font-extralight cursor-pointer hover:text-violet-600">Terms & Conditions</h1>
-                <h1 class="absolute ml-[1450px] mt-[210px] text-xl font-extralight cursor-pointer hover:text-violet-600">Payment Methods</h1>
-                <h1 class="absolute ml-[1450px] mt-[250px] text-xl font-extralight cursor-pointer hover:text-violet-600">FAQ</h1>
+            <div class="flex flex-col gap-3">
+                <h1 class="text-base md:text-xl font-medium">Policy</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">Shipping & Returns</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">Terms & Conditions</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">Payment Methods</h1>
+                <h1 class="text-sm md:text-xl font-extralight cursor-pointer hover:text-violet-600">FAQ</h1>
             </div>
         </div>
     </div>
-        <div class="flex items-center">
-            <h1 class="font-thin mt-[650px] ml-[800px]">We accept the following paying methods</h1>
+
+    <!-- PAYMENT METHODS -->
+    <div class="bg-white px-4 py-8 flex flex-col items-center gap-6">
+        <h1 class="font-thin text-sm sm:text-base md:text-lg text-center">We accept the following paying methods</h1>
+        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10">
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/Visa.avif"/>
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/brand-mastercard@3x.avif"/>
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/american express.avif"/>
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/union pay.avif"/>
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/ucb.avif"/>
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/diner's club.avif"/>
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/discover.avif"/>
+            <img class="w-12 sm:w-16 md:w-[70px] h-auto object-contain" src="Images/homepage/Payment/paypal.avif"/>
         </div>
-        <div class="flex mt-[80px]">
-            <img class="ml-[300px] w-[70px] h-[40px]" src="Images/homepage/Payment/Visa.avif"/>
-            <img class="ml-[100px] w-[70px] h-[40px]" src="Images/homepage/Payment/brand-mastercard@3x.avif"/>
-            <img class="ml-[100px] w-[70px] h-[40px]" src="Images/homepage/Payment/american express.avif"/>
-            <img class="ml-[100px] w-[70px] h-[40px]" src="Images/homepage/Payment/union pay.avif"/>
-            <img class="ml-[100px] w-[70px] h-[40px]" src="Images/homepage/Payment/ucb.avif"/>
-            <img class="ml-[100px] w-[70px] h-[40px]" src="Images/homepage/Payment/diner's club.avif"/>
-            <img class="ml-[100px] w-[70px] h-[40px]" src="Images/homepage/Payment/discover.avif"/>
-            <img class="ml-[100px] w-[70px] h-[40px]" src="Images/homepage/Payment/paypal.avif"/>
-        </div>
-    <div class="bg-gray-200 w-full h-[70px] items-center justify-items-center">
-        <h1 class="mt-[50px] py-[20px] font-thin text-xl">© 2035 by TechShed. Powered and secured by Wix</h1>
     </div>
-    <i class="fa-regular fa-comment-dots fixed bottom-7 right-5 text-3xl text-white rounded-full bg-red-500 px-3 py-2 cursor-pointer"></i>
+
+    <!-- FOOTER BOTTOM -->
+    <div class="bg-gray-200 w-full flex items-center justify-center py-4 md:py-5">
+        <h1 class="font-thin text-sm md:text-xl text-center">© 2035 by TechShed. Powered and secured by Wix</h1>
+    </div>
+
+    <!-- CHAT BUBBLE -->
+    <i class="fa-regular fa-comment-dots fixed bottom-7 right-5 text-3xl text-white rounded-full bg-red-500 px-3 py-2 cursor-pointer z-50"></i>
 </body>
 </html>
